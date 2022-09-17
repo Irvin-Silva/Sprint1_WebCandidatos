@@ -7,7 +7,7 @@
   position: relative;
   }
   /*
-  Ojo los selectores universales estan afectando la tabla,por mi parte es muy dificil que yo los utilice 
+  Ojo los selectores universales estan afectaran a la tabla,por mi parte es muy dificil que yo los utilice 
   */
 
 html, body {
