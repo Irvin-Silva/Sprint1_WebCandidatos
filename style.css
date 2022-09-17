@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  }
+
+html, body {
+  height: 10%;
+  }
+  body {
+    text-align: center;
+    background-color: rgb(70, 110, 209);
+    }
+  body:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    height: 100%;
+    }
+
+h1 {
+  display: inline-block;
+  color: rgb(207, 230, 103);
+  font-family: 'Righteous', serif;
+  font-size: 8.5em; 
+  text-shadow: .03em .03em 0 rgb(207, 48, 23);
+  }
+  
+/*
+Intenté hacer la animación pero no me parece necesario
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
+  }
+  */
