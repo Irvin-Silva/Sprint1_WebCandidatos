@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
-*, *:before, *:after {
+ /**, *:before, *:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   position: relative;
   }
-  /*
+ 
   Ojo los selectores universales estan afectaran a la tabla,por mi parte es muy dificil que yo los utilice 
   */
 
