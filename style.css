@@ -1,11 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
-*, *:before, *:after {
+ /**, *:before, *:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   position: relative;
   }
+ 
+  Ojo los selectores universales estan afectaran a la tabla,por mi parte es muy dificil que yo los utilice 
+  */
 
 html, body {
   height: 10%;
@@ -39,4 +42,7 @@ Intenté hacer la animación pero no me parece necesario
   0% {background-position: 0 0}
   0% {background-position: 100% -100%}
   }
+  
   */
+
+  
