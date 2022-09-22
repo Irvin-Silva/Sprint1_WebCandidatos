@@ -32,10 +32,7 @@ h1 {
   font-size: 8.5em; 
   text-shadow: .03em .03em 0 rgb(207, 48, 23);
   }
-  p{
-    font-size: 1.5em; 
-  }
-  
+
   a{
     border: 1px;
     background-color: darkgray;
