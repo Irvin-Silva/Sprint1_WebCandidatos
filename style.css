@@ -33,6 +33,20 @@ h1 {
   text-shadow: .03em .03em 0 rgb(207, 48, 23);
   }
   
+  a{
+    border: 1px;
+    background-color: darkgray;
+    color: white;
+    text-decoration: none;
+  
+    font-family: sans-serif;
+    border-radius: 6px;
+  }
+  a:hover{
+    background-color: black;
+  }
+ 
+
 /*
 Intenté hacer la animación pero no me parece necesario
 @keyframes shad-anim {
