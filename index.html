@@ -3,23 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Para añdir bootstrap se debe primero referenciar el archivo CSS y despues 
+    si bootstrap, ya que si se referencia bootstrap primero causa conflicto con nuestro 
+    archivo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>votApp</title>
-</head>
-<body>
-    <h1 data-shadow='Elecciones Colombia'>Elecciones Colombia</h1>
-     
-    <p style="background-color: rgba(45, 57, 88, 0.561);border-radius: 10%; color: #f1f1f1; font-weight: bold;font-size: 25px">Este domingo a lo largo y ancho del territorio nacional se llevarán a cabo las elecciones para
-    conformar la segunda rama del poder público, como es la ASAMBLEA POPULAR, a la cual le 
-    corresponde hacer las leyes por las cuales se regularán las relaciones entre los ciudadanos,
-    entre las empresas y organizaciones, entre los primeros y segundos. Este cuerpo legislativo esta
-    conformado por una cámara alta, con candidatos de circunscripción nacional y la cámara baja con
-    circunscripción regional, en ambos casos para un periodo de 6 años, reelegibles por solo una vez.
-    Las elecciones parecen estar marcadas por un aire de renovación, en el cual los pronósticos lo
-    proyectan hasta en un 20% de la corporación</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <h1>TARJETÓN</h1>
+    
+  
+    
+</head>
+
+
+<header id="encabezado">
+    <h1 data-shadow='Elecciones Colombia'>Elecciones Colombia</h1>
+</header>
+<!-- CUERPO -->
+<body>
+    <title>votApp</title>
+
+    
+     <!-- Implementé la ID "divPrimerParrafo" -->
+     <!-- Implementé tambien la clase "classy" aplicando cambios en tamaño del texto y un border radius -->
+    <div style="margin-top: 30px">
+        <img src="imagenes/bandera.png" width="820px" style="border-radius: 20px">
+    </div>
+     
+
+    <div style="margin-top: 40px" class="classy" id="divPrimerParrafo">Este domingo a lo largo y ancho del territorio nacional se llevarán a cabo las elecciones para
+        conformar la segunda rama del poder público, como es la ASAMBLEA POPULAR, a la cual le 
+        corresponde hacer las leyes por las cuales se regularán las relaciones entre los ciudadanos,
+        entre las empresas y organizaciones, entre los primeros y segundos. Este cuerpo legislativo esta
+        conformado por una cámara alta, con candidatos de circunscripción nacional y la cámara baja con
+        circunscripción regional, en ambos casos para un periodo de 6 años, reelegibles por solo una vez.
+        Las elecciones parecen estar marcadas por un aire de renovación, en el cual los pronósticos lo
+        proyectan hasta en un 20% de la corporación</div>
+
+    
+    <div style="margin-top: 50px" >
+        <h1>TARJETÓN</h1>
+    </div>
+    
     <table align="center" border="1">
 
         <thead>
@@ -40,11 +65,14 @@
             <tr>
                 <td width="60" >
                 
-                    <img src="imagenes/conservador.jpeg" height="350">
+                    <img src="imagenes/conservador.jpeg" height="350" id="conservador">
                     <br>
                     <p> Su líder natural es TERESA THATCHER, heredera del caudal político de su padre.</p>
                     <br>
-                    <a href="partidoConservador.html">Sitio del Candidato</a>
+                    <!-- Aplicamos botones de bootstrap -->
+                    <p> <a href="partidoConservador.html" class="btn btn-primary btn-lg" role="button">Sitio del candidato</a> </p> 
+                    
+                    
 
                 </td>
 
@@ -54,7 +82,7 @@
                     <br>
                     <p>Dirigido por ALEXANDER CLINTON, desde temprana edad le gusto la politica.</p>
                     <br>
-                    <a href="partidoLiberal.html">Sitio del Candidato </a>
+                    <p> <a href="partidoLiberal.html" class="btn btn-primary btn-lg" role="button">Sitio del candidato</a> </p> 
                  
                 </td>
 
@@ -63,7 +91,7 @@
                     <br>
                     <p> Comandado por STALIN MOTTA, quien destacó por su vocería en el colegio.</p>
                     <br>
-                    <a href="partidoObrero.html">Sitio del Candidato</a>
+                    <p> <a href="partidoObrero.html" class="btn btn-primary btn-lg" role="button">Sitio del candidato</a> </p> 
 
                 </td>
 
@@ -72,7 +100,7 @@
                     <br>
                     <p>URSULA WANGARY es su carismática jefe quien se hizo visible por impulsar la reforestación del paramo</p>
                     <br>
-                    <a href="partidoEcologista.html">Sitio del Candidato</a>
+                    <p> <a href="partidoEcologista.html" class="btn btn-primary btn-lg" role="button">Sitio del candidato</a> </p> 
                 </td>
 
             </tr>
@@ -80,5 +108,57 @@
 
     </table>
 
+<div style="margin-top: 100px;">
+    <h2 >
+        GANADORES ELECCIONES DE LOS ULTIMOS 3 AÑOS
+    </h2>
+</div>
+    
+
+
+
+    <table class="table" style="margin-top: 30x">
+        <thead>
+          <tr>
+            <th scope="col">AÑO</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">APELLIDO</th>
+            <th scope="col">PERIODO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">2018</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>2018-2022</td>
+          </tr>
+          <tr>
+            <th scope="row">2014</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>2014-218</td>
+          </tr>
+          <tr>
+            <th scope="row">2010</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>2010-2014</td>
+          </tr>
+        </tbody>
+      </table>
+
 </body>
+
+    
+<footer class="text-center text-lg-start bg-light text-muted">
+   
+    
+    <div class="text-center p-4" style="background-color: rgba(254, 58, 58, 0.05);">
+      © 2022 Copyright:
+      <a class="btn btn-outline-primary" href="https://github.com/sabi-tech">Irvin A. Silva</a>
+    </div>
+  
+  </footer>
+
 </html>
