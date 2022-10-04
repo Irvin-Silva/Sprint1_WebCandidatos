@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="js/funcion.js"></script>
 
     
   
@@ -72,7 +73,11 @@
                     <!-- Aplicamos botones de bootstrap -->
                     <p> <a href="partidoConservador.html" class="btn btn-primary btn-lg" role="button">Sitio del candidato</a> </p> 
                     
-                    
+                    <!--candidato 1-->
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-primary" type="button" onclick="voto(0)">Votar</button>
+                       
+                      </div>
 
                 </td>
 
@@ -83,7 +88,12 @@
                     <p>Dirigido por ALEXANDER CLINTON, desde temprana edad le gusto la politica.</p>
                     <br>
                     <p> <a href="partidoLiberal.html" class="btn btn-primary btn-lg" role="button">Sitio del candidato</a> </p> 
-                 
+                   
+                    <!--candidato 2-->
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-primary" type="button" onclick="voto(1)">Votar</button>
+                       
+                      </div>
                 </td>
 
                 <td width="60">
@@ -92,7 +102,12 @@
                     <p> Comandado por STALIN MOTTA, quien destacó por su vocería en el colegio.</p>
                     <br>
                     <p> <a href="partidoObrero.html" class="btn btn-primary btn-lg" role="button">Sitio del candidato</a> </p> 
-
+                   
+                    <!--candidato 3-->
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-primary" type="button" onclick="voto(2)">Votar</button>
+                       
+                      </div>
                 </td>
 
                 <td width="60" >
@@ -101,12 +116,26 @@
                     <p>URSULA WANGARY es su carismática jefe quien se hizo visible por impulsar la reforestación del paramo</p>
                     <br>
                     <p> <a href="partidoEcologista.html" class="btn btn-primary btn-lg" role="button">Sitio del candidato</a> </p> 
+                   
+                    <!--candidato 4-->
+                   <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button" onclick="voto(3)">Votar</button>
+                   
+                  </div>
                 </td>
 
             </tr>
         </tbody>
 
     </table>
+
+
+
+<section>
+<div id="ver">
+    <button class="btn btn-primary" type="button" onclick="estadistica()">Ver Estadistica</button>
+</div>
+</section>
 
 <div style="margin-top: 100px;">
     <h2 >
