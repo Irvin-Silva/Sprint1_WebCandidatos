@@ -50,6 +50,8 @@ function estadistica() {
     elementotabla.appendChild(nodopar3);
     elementotabla.appendChild(nodopar4);
 
+    
+
 
 
 }
