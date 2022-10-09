@@ -1,19 +1,26 @@
 //aporte de jose g daza 
 
-var v_candidatos = new Array(4);
+var v_candidatos = new Array(4); //Cantidad de votos
+var n_candidatos = new Array(4); //Nombres de los candidatos
 
 v_candidatos[0] = 0;
 v_candidatos[1] = 0;
 v_candidatos[2] = 0;
 v_candidatos[3] = 0;
 
+n_candidatos[0] = "TERESA THATCHER"
+n_candidatos[1] = "ALEXANDER CLINTON"
+n_candidatos[2] = "STALIN MOTTA"
+n_candidatos[3] = "URSULA WANGARY"
 
 //empieza la funcion le pasamos candidato
 function voto(candidato) {
     v_candidatos[candidato] = v_candidatos[candidato] + 1;
-    // alert("a realizado un voto");
+    alert("Usted ha votado por : "+ n_candidatos[candidato])
 
 }
+
+
 
 function estadistica() {
     let total = v_candidatos[0] + v_candidatos[1] + v_candidatos[2] + v_candidatos[3];
@@ -27,15 +34,15 @@ function estadistica() {
     let nodopar3 = document.createElement('p');
     let nodopar4 = document.createElement('p');
 
-    let text= document.createTextNode("votos candidato 1: "+ v_candidatos[0]+ " - Porcentaje: "+pcan1+ "%");
+    let text= document.createTextNode("votos "+n_candidatos[0]+" : "+ v_candidatos[0]+ " - Porcentaje: "+pcan1+ "%");
 
-    let text1= document.createTextNode("votos candidato 2: "+ v_candidatos[1]+ " - Porcentaje: "+pcan2+ "%");
-
-
-    let text2= document.createTextNode("votos candidato 3: "+ v_candidatos[2]+ " - Porcentaje: "+pcan3+ "%");
+    let text1= document.createTextNode("votos "+n_candidatos[1]+" : "+ v_candidatos[1]+ " - Porcentaje: "+pcan2+ "%");
 
 
-    let text3= document.createTextNode("votos candidato 4: "+ v_candidatos[3]+ " - Porcentaje: "+pcan4+ "%");
+    let text2= document.createTextNode("votos "+n_candidatos[2]+" : "+ v_candidatos[2]+ " - Porcentaje: "+pcan3+ "%");
+
+
+    let text3= document.createTextNode("votos "+n_candidatos[3]+" : "+ v_candidatos[3]+ " - Porcentaje: "+pcan4+ "%");
 
     nodopar1.appendChild(text);
     nodopar2.appendChild(text1);
