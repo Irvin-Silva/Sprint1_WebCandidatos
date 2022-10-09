@@ -50,6 +50,29 @@ function estadistica() {
     elementotabla.appendChild(nodopar3);
     elementotabla.appendChild(nodopar4);
 
+var xValues = ["TERESA THATCHER", "ALEXANDER CLINTON", "STALIN MOTTA", "URSULA WANGARY"];
+var yValues = [ v_candidatos[0],  v_candidatos[1],  v_candidatos[2],  v_candidatos[3]];
+var barColors = ["pink", "purple","blue","orange"];
+
+new Chart("myChart", {
+    type: "pie",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Candidatos"
+      }
+    }
+  });
+
+    
+
     
 
 

@@ -10,6 +10,8 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <script src="js/funcion.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
 
     
   
@@ -29,8 +31,9 @@
      <!-- Implementé tambien la clase "classy" aplicando cambios en tamaño del texto y un border radius -->
     <div style="margin-top: 30px">
         <img src="imagenes/bandera.png" width="820px" style="border-radius: 20px">
+        
     </div>
-     
+    
 
     <div style="margin-top: 40px" class="classy" id="divPrimerParrafo">Este domingo a lo largo y ancho del territorio nacional se llevarán a cabo las elecciones para
         conformar la segunda rama del poder público, como es la ASAMBLEA POPULAR, a la cual le 
@@ -144,8 +147,15 @@
 
 <section>
 <div id="ver">
-    <button style="margin-top: 60px; font-size: 20px;" class="btn btn-success" type="button" onclick="estadistica()">Ver Estadistica</button>
+ 
+  <button style="margin-top: 100px; font-size: 20px;" class="btn btn-success" type="button" onclick="estadistica()">Ver Estadistica</button>
+  <div>
+    <canvas id="myChart" style="width: 2px;max-width:900px;margin-bottom: 40px; margin-top: 40px; border-radius: 20px;"></canvas>
+
+  </div>
+  
 </div>
+
 </section>
 
 <div style="margin-top: 100px;">

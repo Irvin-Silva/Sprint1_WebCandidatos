@@ -37,6 +37,17 @@ html, body {
   background-image: url("imagenes/elecciones.jpeg");
 
 }
+#myChart{
+
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+    background-color: #ffffff;
+
+}
 
 
 div.classy {
@@ -57,7 +68,7 @@ h1 {
     background-color: darkgray;
     color: white;
     text-decoration: none;
-<<<<<<< HEAD
+
   
     font-family: sans-serif;
     border-radius: 6px;
@@ -126,16 +137,6 @@ h1 {
     color:#aaa;
     margin-bottom:0;
   }
-=======
-  
-    font-family: sans-serif;
-    border-radius: 6px;
-  }
-  a:hover{
-    background-color: black;
-  }
- 
->>>>>>> a082594b4864c9f1083c4f01e8f0999328a1bba8
 
 /*
 Intenté hacer la animación pero no me parece necesario
