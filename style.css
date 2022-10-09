@@ -16,7 +16,7 @@ html, body {
   }
   body {
     text-align: center;
-    background-color: rgb(70, 110, 209);
+    background-color: rgb(255, 255, 255);
     }
   body:before {
     content: '';
